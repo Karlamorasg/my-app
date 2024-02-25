@@ -1,0 +1,26 @@
+.login{
+    background: rgb(230,187,220);
+    background: linear-gradient(209deg, rgba(230,187,220,1) 0%, rgba(196,249,235,1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__login-form{
+      background: rgb(246,192,233);
+background: linear-gradient(49deg, rgba(246,192,233,1) 50%, rgba(157,252,227,1) 50%);
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      button {
+        padding: 5px;
+      }
+    }
+}
