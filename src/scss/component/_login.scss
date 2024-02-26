@@ -1,26 +1,61 @@
-.login{
-    background: rgb(230,187,220);
-    background: linear-gradient(209deg, rgba(230,187,220,1) 0%, rgba(196,249,235,1) 100%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login {
+  background: rgb(230, 187, 220);
+  background: linear-gradient(
+    209deg,
+    rgba(230, 187, 220, 1) 0%,
+    rgba(196, 249, 235, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &__login-form{
-      background: rgb(246,192,233);
-background: linear-gradient(49deg, rgba(246,192,233,1) 50%, rgba(157,252,227,1) 50%);
-      padding: 20px;
-      border-radius: 10px;
+  &__login-form {
+    height: 400px;
+    width: 300px;
+    background: rgb(246, 192, 233);
+    background: linear-gradient(
+      49deg,
+      rgba(246, 192, 233, 1) 50%,
+      rgba(157, 252, 227, 1) 50%
+    );
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__inputs {
+      text-decoration: none;
       display: flex;
       flex-direction: column;
+      gap: 30px;
 
-      input {
-        margin-bottom: 10px;
-        padding: 5px;
+      &-username,
+      &-password,
+      &__button {
+        border: none;
+        height: 40px;
+        border-radius: 5px;
       }
 
-      button {
-        padding: 5px;
+      &__button {
+        // color: pink;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      }
+
+      &__button:hover {
+        background-color: rgb(230, 187, 220);
       }
     }
+  }
 }
